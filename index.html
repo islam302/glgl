@@ -36,22 +36,22 @@
         }
         .hero h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2.5em;
             animation: fadeInUp 1s ease-out;
         }
         .hero p {
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin: 20px 0;
             animation: fadeInUp 1.5s ease-out;
         }
         .cta-button {
             background-color: #ff6f61;
             color: #fff;
-            padding: 15px 30px;
+            padding: 12px 25px;
             border: none;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.1em;
             display: inline-block;
             margin-top: 20px;
             transition: background-color 0.3s ease;
@@ -59,7 +59,7 @@
         }
         .cta-button:hover {
             background-color: #ff3f2e;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         .features {
             display: flex;
@@ -78,10 +78,20 @@
             max-width: 30%;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
+            text-align: center;
         }
         .feature:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         .testimonial img {
             border-radius: 50%;
@@ -111,19 +121,34 @@
             padding: 15px 0;
             text-align: center;
         }
-        /* Responsive */
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2em;
             }
+            .hero p {
+                font-size: 1em;
+            }
             .cta-button {
                 font-size: 1em;
+                padding: 10px 20px;
             }
             .features {
                 flex-direction: column;
+                align-items: center;
             }
             .feature {
                 max-width: 100%;
+            }
+            .testimonial {
+                flex-direction: column;
+                text-align: center;
+            }
+            .testimonial img {
+                margin: 0 auto 10px;
+            }
+            .social-links a {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -166,27 +191,20 @@
             </div>
         </div>
 
-        <div class="contact">
-            <h2>تفاصيل الاتصال</h2>
-            <p><strong>البريد الإلكتروني:</strong> islampadran39@gmail.com</p>
-            <p><strong>رقم الهاتف:</strong> 01013919821</p>
-            <div class="social-links">
-                <a href="https://wa.me/201013919821" class="fab fa-whatsapp"></a>
-                <a href="https://www.linkedin.com/in/islambadran/" class="fab fa-linkedin"></a>
-                <a href="https://www.facebook.com/islambadran39/" class="fab fa-facebook"></a>
-            </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 جميع الحقوق محفوظة - جلجل للخدمات البرمجية</p>
+        <p>&copy; 2024 جلجل للخدمات البرمجية. جميع الحقوق محفوظة.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1200,
-        });
+        AOS.init();
     </script>
 </body>
 </html>
