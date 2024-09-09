@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جلجل للخدمات البرمجية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: #fff;
+            background-color: #28a745;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #ddd;
+            background-image: linear-gradient(135deg, rgba(0,150,0,0.8), rgba(50,205,50,0.8)), url('https://source.unsplash.com/1600x900/?technology');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin: 20px 0;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        .cta-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:hover {
+            background-color: #ff3f2e;
+            transform: scale(1.1);
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        .feature {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 30%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .testimonial img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+        .testimonial img:hover {
+            transform: rotate(360deg);
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 2em;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ff6f61;
+            transform: scale(1.2);
+        }
+        footer {
+            background: #28a745;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .cta-button {
+                font-size: 1em;
+            }
+            .features {
+                flex-direction: column;
+            }
+            .feature {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero animate__animated animate__fadeIn animate__delay-1s">
+            <h1>احصل على خدمة انشاء موقع الكتروني لعملك الآن - العرض الخاص ينتهي قريبًا!</h1>
+            <p>هل تبحث عن حل لمشكلة الحصول علي عملاء؟ تعرف على موقع جلجل الذي سيساعدك على الوصول الي عدد كبير من العملاء عن طريق انشاء موقع الكتروني لعرض اعمالك بسهولة ونشره في كل مكان.</p>
+            <a href="https://wa.me/201013919821" class="cta-button">اشترك الآن</a>
+        </div>
+
+        <div class="features">
+            <div class="feature" data-aos="fade-up">
+                <img src="https://cdn-icons-png.flaticon.com/128/3178/3178162.png" alt="">
+                <p>انشاء موقع الكتروني</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://cdn-icons-png.flaticon.com/128/596/596041.png" alt="">
+                <p>نشره في كل مكان</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://cdn-icons-png.flaticon.com/128/281/281764.png" alt="">
+                <p>الظهور علي رأس بحث جوجل</p>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial" data-aos="fade-right">
+                <img src="https://scontent.fcai21-2.fna.fbcdn.net/v/t39.30808-6/343949020_582536246994717_7259547476529462713_n.jpg?stp=dst-jpg_s206x206&_nc_cat=109&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=TuwACs_8o7oQ7kNvgG690d_&_nc_ht=scontent.fcai21-2.fna&oh=00_AYAs55YSHP6qVyEh3bszN_6gZl8SGQj6jip8awX4MwVgZw&oe=66E55CAD" alt="اسلام بدران">
+                <div>
+                    <p><strong>اسلام بدران:</strong> "تجربتي مع موقع جلجل كانت رائعة، أنصح به بشدة!"</p>
+                </div>
+            </div>
+            <div class="testimonial" data-aos="fade-left">
+                <img src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/424661056_409637981441219_2455793039523400300_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Tg09T_n5bfwQ7kNvgHvdnYw&_nc_ht=scontent.fcai21-3.fna&oh=00_AYB48pXT1qnOrukdNoAkuLge-KwenLvo1tFvMv7aQ-datQ&oe=66E53704" alt="عبده هاني">
+                <div>
+                    <p><strong>عبده هاني:</strong> "خدمة ممتازة، دعم العملاء كان رائعًا!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>تفاصيل الاتصال</h2>
+            <p><strong>البريد الإلكتروني:</strong> islampadran39@gmail.com</p>
+            <p><strong>رقم الهاتف:</strong> 01013919821</p>
+            <div class="social-links">
+                <a href="https://wa.me/201013919821" class="fab fa-whatsapp"></a>
+                <a href="https://www.linkedin.com/in/islambadran/" class="fab fa-linkedin"></a>
+                <a href="https://www.facebook.com/islambadran39/" class="fab fa-facebook"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة - جلجل للخدمات البرمجية</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>
